@@ -4,12 +4,17 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Paper Cup Wala</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
+    <meta content="Paper cup manfacturing" name="description" />
+    <meta content="Paper Cup Wala" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- One of the following themes -->
+    <link rel="stylesheet" href="assets/libs/@simonwep/pickr/themes/classic.min.css" /> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="assets/libs/@simonwep/pickr/themes/monolith.min.css" /> <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="assets/libs/@simonwep/pickr/themes/nano.min.css" /> <!-- 'nano' theme -->
 
     <!-- jsvectormap css -->
     <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
@@ -247,12 +252,83 @@
                                 <div class="card-body">
                                     <div class="live-preview">
                                         <div class="row gy-4">
-                                            <div class="col-xxl-3 col-md-6">
+
+                                            <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Basic Input</label>
-                                                    <input type="password" class="form-control" id="basiInput">
+                                                    <label for="basiInput" class="form-label">Date</label>
+                                                    <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" >
                                                 </div>
                                             </div>
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
+                                                    <label for="basiInput" class="form-label">Expense Category</label>
+                                                    <input type="text" class="form-control" id="basiInput">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
+                                                    <label for="basiInput" class="form-label col-12">Description of Expense</label>
+                                                    <input type="text" list="description" class="form-select"/>
+                                                    
+
+
+
+                                                    <datalist class="form-selectx" id="description" required="">
+                                                        <option selected="" disabled="" value="">Choose...</option>
+                                                        <option>Rent</option>
+                                                        <option>Electricity</option>
+                                                        <option>Salary</option>
+                                                        <option>Water Jar</option>
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-6 ">
+                                                <label for="basiInput" class="form-label col-md-12 mb-3">Receipt Provided</label>
+                                                <span class="me-4">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Yes
+                                                    </label>
+                                                </span>
+                                                <span>
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        No
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
+                                                    <label for="basiInput" class="form-label">Amount</label>
+
+                                                    <div class="input-group has-validation">
+                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
+                                                        <input type="number" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-6 ">
+                                                <label for="basiInput" class="form-label col-md-12 mb-3">Payment Mode</label>
+                                                <span class="me-4">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Cash
+                                                    </label>
+                                                </span>
+                                                <span>
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Online
+                                                    </label>
+                                                </span>
+                                            </div>
+
+
+
+                                            
+                                            
                                             <div class="col-12">
                                                 <button class="btn btn-primary" type="submit">Submit form</button>
                                             </div>
@@ -331,7 +407,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script>2024 © Paper Cup Wala.
+                            <script>document.write(new Date().getFullYear())</script> © Paper Cup Wala.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
@@ -376,20 +452,16 @@
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
 
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Modern colorpicker bundle -->
+    <script src="assets/libs/@simonwep/pickr/pickr.min.js"></script>
 
-    <!-- Vector map-->
-    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- init js -->
+    <script src="assets/js/pages/form-pickers.init.js"></script>
 
-    <!--Swiper slider js-->
-    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
 
-    <!-- Dashboard init -->
-    <script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
-
-    <!-- App js -->
+    <!--app js-->
     <script src="assets/js/app.js"></script>
 </body>
 
