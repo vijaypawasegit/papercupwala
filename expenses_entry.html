@@ -162,9 +162,9 @@
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     
-                                    <li class="nav-item" >
+                                    <!-- <li class="nav-item" >
                                         <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a href="employee_registration.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
                                     </li>
@@ -193,6 +193,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="scrap_entry.html" class="nav-link" data-key="t-scrap-entry"> scrap entry </a>
+                                    </li>
+                                    <li class="nav-item" >
+                                        <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="people_entry_exit.html" class="nav-link" data-key="t-people-entry-and-exit"> people entry and exit </a>
@@ -251,30 +254,37 @@
                                 </div> --><!-- end card header -->
                                 <div class="card-body">
                                     <div class="live-preview">
+                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+               onload="if(submitted) {window.location='expenses_entry.html';}"></iframe>
+            <form method="post"
+               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWJJLyQxpvfk0aIZ_FbVGIw34bmzYJdkbi-ggbnbb85bPYZA/formResponse"
+               id="contact-form01" target="hidden_iframe" onsubmit="submitted=true;">
                                         <div class="row gy-4">
 
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Date</label>
-                                                    <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" >
+                                                    <label for="date" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" name="entry.1785172680" id="date">
+
+                                                    
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-4 col-md-6">
+                                            <!-- <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Expense Category</label>
                                                     <input type="text" class="form-control" id="basiInput">
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label col-12">Description of Expense</label>
-                                                    <input type="text" list="description" class="form-select"/>
+                                                    <label for="description" class="form-label col-12">Description of Expense</label>
+                                                    <input name="entry.912245389" type="text" list="description" class="form-select" id="description"/>
                                                     
 
 
 
-                                                    <datalist class="form-selectx" id="description" required="">
+                                                    <datalist name="entry.912245389" class="form-selectx" id="description" required="">
                                                         <option selected="" disabled="" value="">Choose...</option>
                                                         <option>Rent</option>
                                                         <option>Electricity</option>
@@ -284,16 +294,16 @@
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6 ">
-                                                <label for="basiInput" class="form-label col-md-12 mb-3">Receipt Provided</label>
+                                                <label for="entry.847010365" class="form-label col-md-12 mb-3">Receipt Provided</label>
                                                 <span class="me-4">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                    <input value="Yes" name="entry.847010365" class="form-check-input" type="radio"  id="entry.847010365">
+                                                    <label form="Yes" class="form-check-label" >
                                                         Yes
                                                     </label>
                                                 </span>
                                                 <span>
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input value="No" name="entry.847010365" class="form-check-input" type="radio"  id="entry.847010365">
+                                                    <label for="No" class="form-check-label" >
                                                         No
                                                     </label>
                                                 </span>
@@ -304,22 +314,22 @@
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
-                                                        <input type="number" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
+                                                        <input name="entry.1547063044" type="number" class="form-control" id="basiInput"  required="">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6 ">
-                                                <label for="basiInput" class="form-label col-md-12 mb-3">Payment Mode</label>
+                                                <label for="entry.1908069096" class="form-label col-md-12 mb-3">Payment Mode</label>
                                                 <span class="me-4">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                    <input class="form-check-input" value="Cash" type="radio" name="entry.1908069096" id="entry.1908069096">
+                                                    <label class="form-check-label" for="Cash">
                                                         Cash
                                                     </label>
                                                 </span>
                                                 <span>
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input class="form-check-input" value="Online" type="radio" name="entry.1908069096" id="entry.1908069096">
+                                                    <label class="form-check-label" for="Online">
                                                         Online
                                                     </label>
                                                 </span>
@@ -330,7 +340,7 @@
                                             
                                             
                                             <div class="col-12">
-                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                                <button class="btn btn-primary" type="submit" name="submit-form">Submit form</button>
                                             </div>
                                             
                                             
@@ -365,6 +375,7 @@
                                             
                                             
                                         </div>
+                                        </form>
                                         <!--end row-->
                                     </div>
                                   

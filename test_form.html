@@ -32,7 +32,14 @@
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-
+    <script>
+        function redirectAfterSubmit() {
+            // Add a delay to allow the form to submit before redirecting
+            setTimeout(function() {
+                window.location.href = "https://www.google.com"; // Replace with your desired redirect URL
+            }, 2000); // Adjust the delay as needed (in milliseconds)
+        }
+    </script>
 </head>
 
 <body>
@@ -169,7 +176,7 @@
                                         <a href="employee_registration.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="marketing_employee_registration.html" class="nav-link" data-key="t-marketing-employee-registration"> Marketing Employee Registration </a>
+                                        <a href="marketing_employee_registration.html" class="nav-link active" data-key="t-marketing-employee-registration"> Marketing Employee Registration </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="expenses_entry.html" class="nav-link" data-key="t-expenses-entry"> Expenses Entry </a>
@@ -189,7 +196,7 @@
                                         <a href="contact_details.html" class="nav-link" data-key="t-contact-details"> Contact Details </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="raw_material_entry.html" class="nav-link active" data-key="t-raw-material-entry"> Raw Material Entry </a>
+                                        <a href="raw_material_entry.html" class="nav-link" data-key="t-raw-material-entry"> Raw Material Entry </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="scrap_entry.html" class="nav-link" data-key="t-scrap-entry"> scrap entry </a>
@@ -231,15 +238,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Raw Material Entry
-                                </h4>
+                                <h4 class="mb-sm-0">Marketing Employee Registration</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Apps</a></li>
-                                        <li class="breadcrumb-item active">Raw Material Entry
-
-                                        </li>
+                                        <li class="breadcrumb-item active">Marketing Employee Registration</li>
                                     </ol>
                                 </div>
 
@@ -257,125 +261,7 @@
                                 </div> --><!-- end card header -->
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-               onload="if(submitted) {window.location='raw_material_entry.html';}"></iframe>
-            <form method="post"
-               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfbqf4fu4eeJj8phJA6Rk3_6mOpT199xT-74jRiMTLT0oJExw/formResponse"
-               id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
-                                        <div class="row gy-4">
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="dateofbirth" class="form-label">Date of birth</label>
-                                                    <input type="date" name="entry.451404301" id="dateofbirth" class="form-control">
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="vendorname" class="form-label">Vendor Name</label>
-                                                    <input type="text" name="entry.966908735" class="form-control" id="vendorname">
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="contactnumber" class="form-label">Contact Number</label>
-                                                    <input type="text" name="entry.1558035071" class="form-control" id="contactnumber">
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="products" class="form-label col-12">Products</label>
-                                                    <input name="entry.2044525281" type="text" list="products" class="form-select" id="description">
-                                                    <datalist name="entry.2044525281" class="form-selectx" id="products" required="">
-                                                        <option selected="" disabled="" value="">Choose...</option>
-                                                        <option>Blanks</option>
-                                                        <option>Bottom</option>
-                                                    </datalist>
-                                                </div>
-                                            </div> -->
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="quantity" class="form-label">Quantity</label>
-
-                                                    <div class="input-group has-validation">
-                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">KG</span>
-                                                        <input name="entry.898764589" type="number" class="form-control" id="quantity" required="">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="amount" class="form-label">Amount</label>
-
-                                                    <div class="input-group has-validation">
-                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
-                                                        <input name="entry.1053984978" type="number" class="form-control" id="amount" required="">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6 ">
-                                                <label for="entry.1233524397" class="form-label col-md-12 mb-3">Payment Mode</label>
-                                                <span class="me-4">
-                                                    <input class="form-check-input" value="Cash" type="radio" name="entry.1233524397" id="entry.1233524397">
-                                                    <label class="form-check-label" for="Cash">
-                                                        Cash
-                                                    </label>
-                                                </span>
-                                                <span>
-                                                    <input class="form-check-input" value="Online" type="radio" name="entry.1233524397" id="entry.1233524397">
-                                                    <label class="form-check-label" for="Online">
-                                                        Online
-                                                    </label>
-                                                </span>
-                                            </div>
-                                            
-
-
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="col-12">
-                                                <button class="btn btn-primary" type="submit"  name="submit-form">Submit form</button>
-                                            </div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        </div>
-                                        </form>
+                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFn8I68lcgz0Iy5jpCPOCceLBPlcUILjK3H3It4Qnrg9eTuA/viewform?embedded=true" width="100%" height="1285" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                                         <!--end row-->
                                     </div>
                                   

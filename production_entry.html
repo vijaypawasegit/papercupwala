@@ -162,9 +162,9 @@
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     
-                                    <li class="nav-item" >
+                                    <!-- <li class="nav-item" >
                                         <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a href="employee_registration.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
                                     </li>
@@ -193,6 +193,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="scrap_entry.html" class="nav-link" data-key="t-scrap-entry"> scrap entry </a>
+                                    </li>
+                                    <li class="nav-item" >
+                                        <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="people_entry_exit.html" class="nav-link" data-key="t-people-entry-and-exit"> people entry and exit </a>
@@ -251,19 +254,24 @@
                                 </div> --><!-- end card header -->
                                 <div class="card-body">
                                     <div class="live-preview">
+                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+               onload="if(submitted) {window.location='marketing_employee_registration.html';}"></iframe>
+            <form method="post"
+               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-mgFYI-SknmJaps8IK52-jg-zA6R8AklATTYpwpp0Eo4dGQ/formResponse"
+               id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                                         <div class="row gy-4">
 
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Date</label>
-                                                    <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-range-date="true" >
+                                                    <input type="date" name="entry.1104084039" class="form-control"  >
                                                 </div>
                                             </div>
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Size</label>
-                                                    <select class="form-select" id="validationTooltip04" required="">
+                                                    <select name="entry.453030818" class="form-select" id="validationTooltip04" required="">
                                                         <option selected="" disabled="" value="">Choose...</option>
                                                         <option>55 ML</option>
                                                     </select>
@@ -274,14 +282,14 @@
                                                 <div>
                                                     <label for="basiInput" class="form-label">Quantity Per Box</label>
                                                     
-                                                    <input type="number" class="form-control" id="basiInput">
+                                                    <input type="number" class="form-control" id="basiInput" name="entry.612608022">
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Number of Boxes</label>
                                                     
-                                                    <input type="number" class="form-control" id="basiInput">
+                                                    <input type="number" class="form-control" id="basiInput" name="entry.1200913536">
                                                 </div>
                                             </div>
 
@@ -292,7 +300,7 @@
                                             
                                             
                                             <div class="col-12">
-                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                                <button class="btn btn-primary" type="submit" name="submit-form">Submit form</button>
                                             </div>
                                             
                                             
@@ -327,6 +335,7 @@
                                             
                                             
                                         </div>
+                                        </form>
                                         <!--end row-->
                                     </div>
                                   
