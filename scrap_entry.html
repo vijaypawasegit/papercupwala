@@ -146,11 +146,9 @@
                             <div class="collapse menu-dropdown" id="sidebarDashboards">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-analytics"> Analytics </a>
+                                        <a href="index.html" class="nav-link" data-key="t-analytics"> Analytics </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-crm"> CRM </a>
-                                    </li>
+                                    
                                     
                                 </ul>
                             </div>
@@ -165,11 +163,9 @@
                                     <!-- <li class="nav-item" >
                                         <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
                                     </li> -->
+                                   
                                     <li class="nav-item">
-                                        <a href="employee_registration.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="marketing_employee_registration.html" class="nav-link" data-key="t-marketing-employee-registration"> Marketing Employee Registration </a>
+                                        <a href="marketing_employee_registration.html" class="nav-link" data-key="t-marketing-employee-registration"> Employee Registration </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="expenses_entry.html" class="nav-link" data-key="t-expenses-entry"> Expenses Entry </a>
@@ -254,12 +250,17 @@
                                 </div> --><!-- end card header -->
                                 <div class="card-body">
                                     <div class="live-preview">
+                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                        onload="if(submitted) {window.location='scrap_entry.html';}"></iframe>
+                                     <form method="post"
+                                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8okYPmIY9gBzTG29Un2AMUudk5-6h18J5dC7kbnvy4EQyhQ/formResponse"
+                                        id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                                         <div class="row gy-4">
 
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Date</label>
-                                                    <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-range-date="true" >
+                                                    <label class="form-label">Date</label>
+                                                    <input type="date" class="form-control" name="entry.119507538">
                                                 </div>
                                             </div>
                                             
@@ -268,51 +269,51 @@
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Buyer Name</label>
+                                                    <label  class="form-label">Buyer Name</label>
                                                     
-                                                    <input type="text" class="form-control" id="basiInput">
+                                                    <input type="text" class="form-control"  name="entry.1448537331">
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Contact Number</label>
+                                                    <label class="form-label">Contact Number</label>
                                                     
-                                                    <input type="number" class="form-control" id="basiInput">
+                                                    <input type="number" class="form-control" name="entry.2064866875">
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Quantity</label>
+                                                    <label  class="form-label">Quantity</label>
 
                                                     <div class="input-group has-validation">
-                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">KG</span>
-                                                        <input type="number" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
+                                                        <span class="input-group-text" >KG</span>
+                                                        <input type="number" name="entry.662670698" class="form-control"  required="">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Amount</label>
+                                                    <label  class="form-label">Amount</label>
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
-                                                        <input type="number" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
+                                                        <input type="number" name="entry.777795945" class="form-control"  required="">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6 ">
-                                                <label for="basiInput" class="form-label col-md-12 mb-3">Payment Mode</label>
+                                                <label for="entry.1468397481" class="form-label col-md-12 mb-3">Payment Mode</label>
                                                 <span class="me-4">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                    <input value="Cash" class="form-check-input" type="radio"  id="entry.1468397481" name="entry.1468397481">
+                                                    <label class="form-check-label" for="Cash">
                                                         Cash
                                                     </label>
                                                 </span>
                                                 <span>
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input value="Online" class="form-check-input" type="radio" name="entry.1468397481" id="entry.1468397481" >
+                                                    <label class="form-check-label" for="Online">
                                                         Online
                                                     </label>
                                                 </span>
@@ -326,7 +327,7 @@
                                             
                                             
                                             <div class="col-12">
-                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                                <button class="btn btn-primary" type="submit"  name="submit-form">Submit form</button>
                                             </div>
                                             
                                             
@@ -361,6 +362,7 @@
                                             
                                             
                                         </div>
+                                        </form>
                                         <!--end row-->
                                     </div>
                                   
