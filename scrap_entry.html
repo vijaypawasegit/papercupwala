@@ -175,7 +175,9 @@
                                     <li class="nav-item">
                                         <a href="production_entry.html" class="nav-link" data-key="t-production-entry"> Production Entry </a>
                                     </li>
-                                    
+                                    <li class="nav-item">
+                                        <a href="operator_payment.html" class="nav-link" data-key="t-production-entry"> Operator payment </a>
+                                    </li>
                                     <li class="nav-item">
                                         <a href="sales_entry.html" class="nav-link" data-key="t-sales-entry-local"> Sales Entry </a>
                                     </li>
@@ -262,7 +264,7 @@
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label class="form-label">Date</label>
-                                                    <input type="date" class="form-control" name="entry.119507538">
+                                                    <input type="date" class="form-control" name="entry.119507538" required>
                                                 </div>
                                             </div>
                                             
@@ -273,14 +275,14 @@
                                                 <div>
                                                     <label  class="form-label">Buyer Name</label>
                                                     
-                                                    <input type="text" class="form-control"  name="entry.1448537331">
+                                                    <input type="text" class="form-control"  name="entry.1448537331" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label class="form-label">Contact Number</label>
                                                     
-                                                    <input type="number" class="form-control" name="entry.2064866875">
+                                                    <input type="number" class="form-control" name="entry.2064866875" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
@@ -289,7 +291,7 @@
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text" >KG</span>
-                                                        <input type="number" name="entry.662670698" class="form-control"  required="">
+                                                        <input type="number" name="entry.662670698" class="form-control"  required>
                                                         
                                                     </div>
                                                 </div>
@@ -300,7 +302,7 @@
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
-                                                        <input type="number" name="entry.777795945" class="form-control"  required="">
+                                                        <input type="number" name="entry.777795945" class="form-control"  required>
                                                         
                                                     </div>
                                                 </div>
@@ -308,13 +310,13 @@
                                             <div class="col-xxl-4 col-md-6 ">
                                                 <label for="entry.1468397481" class="form-label col-md-12 mb-3">Payment Mode</label>
                                                 <span class="me-4">
-                                                    <input value="Cash" class="form-check-input" type="radio"  id="entry.1468397481" name="entry.1468397481">
+                                                    <input value="Cash" class="form-check-input" type="radio"  id="entry.1468397481" name="entry.1468397481" required>
                                                     <label class="form-check-label" for="Cash">
                                                         Cash
                                                     </label>
                                                 </span>
                                                 <span>
-                                                    <input value="Online" class="form-check-input" type="radio" name="entry.1468397481" id="entry.1468397481" >
+                                                    <input value="Online" class="form-check-input" type="radio" name="entry.1468397481" id="entry.1468397481" required>
                                                     <label class="form-check-label" for="Online">
                                                         Online
                                                     </label>

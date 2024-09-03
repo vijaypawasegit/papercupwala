@@ -174,7 +174,9 @@
                                     <li class="nav-item">
                                         <a href="production_entry.html" class="nav-link active" data-key="t-production-entry"> Production Entry </a>
                                     </li>
-                                    
+                                    <li class="nav-item">
+                                        <a href="operator_payment.html" class="nav-link" data-key="t-production-entry"> Operator payment </a>
+                                    </li>
                                     <li class="nav-item">
                                         <a href="sales_entry.html" class="nav-link" data-key="t-sales-entry-local"> Sales Entry </a>
                                     </li>
@@ -252,7 +254,7 @@
                                 <div class="card-body">
                                     <div class="live-preview">
                                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-               onload="if(submitted) {window.location='marketing_employee_registration.html';}"></iframe>
+               onload="if(submitted) {window.location='production_entry.html';}"></iframe>
             <form method="post"
                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-mgFYI-SknmJaps8IK52-jg-zA6R8AklATTYpwpp0Eo4dGQ/formResponse"
                id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
@@ -261,14 +263,14 @@
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Date</label>
-                                                    <input type="date" name="entry.1104084039" class="form-control"  >
+                                                    <input type="date" name="entry.1104084039" class="form-control" required >
                                                 </div>
                                             </div>
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Size</label>
-                                                    <select name="entry.453030818" class="form-select" id="validationTooltip04" required="">
+                                                    <select name="entry.453030818" class="form-select" id="validationTooltip04" required>
                                                         <option selected="" disabled="" value="">Choose...</option>
                                                         <option>55 ML</option>
                                                     </select>
@@ -279,14 +281,14 @@
                                                 <div>
                                                     <label for="basiInput" class="form-label">Quantity Per Box</label>
                                                     
-                                                    <input type="number" class="form-control" id="basiInput" name="entry.612608022">
+                                                    <input type="number" class="form-control" id="basiInput" name="entry.612608022" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="basiInput" class="form-label">Number of Boxes</label>
                                                     
-                                                    <input type="number" class="form-control" id="basiInput" name="entry.1200913536">
+                                                    <input type="number" class="form-control" id="basiInput" name="entry.1200913536" required>
                                                 </div>
                                             </div>
 

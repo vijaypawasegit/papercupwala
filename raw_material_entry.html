@@ -174,7 +174,9 @@
                                     <li class="nav-item">
                                         <a href="production_entry.html" class="nav-link" data-key="t-production-entry"> Production Entry </a>
                                     </li>
-                                    
+                                    <li class="nav-item">
+                                        <a href="operator_payment.html" class="nav-link" data-key="t-production-entry"> Operator payment </a>
+                                    </li>
                                     <li class="nav-item">
                                         <a href="sales_entry.html" class="nav-link" data-key="t-sales-entry-local"> Sales Entry </a>
                                     </li>
@@ -264,20 +266,27 @@
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="date" class="form-label">Date</label>
-                                                    <input type="date" name="entry.451404301" class="form-control">
+                                                    <input type="date" name="entry.451404301" class="form-control" required>
                                                 </div>
                                             </div>
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
                                                     <label for="vendorname" class="form-label">Vendor Name</label>
-                                                    <input type="text" name="entry.966908735" class="form-control" id="vendorname">
+                                                    <input type="text" name="entry.966908735" class="form-control" id="vendorname" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
+                                                    <label for="contactnumber" class="form-label">Discription</label>
+                                                    <input type="text" name="entry.1655929901" class="form-control" id="contactnumber" required>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
                                                     <label for="contactnumber" class="form-label">Contact Number</label>
-                                                    <input type="text" name="entry.1558035071" class="form-control" id="contactnumber">
+                                                    <input type="text" name="entry.1558035071" class="form-control" id="contactnumber" required>
                                                 </div>
                                             </div>
                                             
@@ -287,7 +296,7 @@
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text">KG</span>
-                                                        <input name="entry.2044525281" type="number" class="form-control"  required="">
+                                                        <input name="entry.2044525281" type="number" class="form-control"  required="" required>
                                                         
                                                     </div>
                                                 </div>
@@ -298,21 +307,22 @@
 
                                                     <div class="input-group has-validation">
                                                         <span class="input-group-text" >₹</span>
-                                                        <input name="entry.898764589" type="number" class="form-control"  required="">
+                                                        <input name="entry.898764589" type="number" class="form-control"  required="" required>
                                                         
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-xxl-4 col-md-6 ">
                                                 <label for="entry.1233524397" class="form-label col-md-12 mb-3">Payment Mode</label>
                                                 <span class="me-4">
-                                                    <input class="form-check-input" value="Cash" type="radio" name="entry.1233524397" id="entry.1233524397">
+                                                    <input class="form-check-input" value="Cash" type="radio" name="entry.1233524397" id="entry.1233524397" required>
                                                     <label class="form-check-label" for="Cash">
                                                         Cash
                                                     </label>
                                                 </span>
                                                 <span>
-                                                    <input class="form-check-input" value="Online" type="radio" name="entry.1233524397" id="entry.1233524397">
+                                                    <input class="form-check-input" value="Online" type="radio" name="entry.1233524397" id="entry.1233524397" required>
                                                     <label class="form-check-label" for="Online">
                                                         Online
                                                     </label>
