@@ -75,7 +75,7 @@
 
                
             </div>
-            <a href="customer_entry_view.html"><button class="btn btn-primary" type="text" >View data</button></a>
+            <a href="investment_entry_view.html"><button class="btn btn-primary" type="text" >View data</button></a>
 
           
         </div>
@@ -161,15 +161,13 @@
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     
-                                    <!-- <li class="nav-item" >
-                                        <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
-                                    </li> -->
+                                    
                                    
                                     <li class="nav-item">
                                         <a href="employee_registration_view.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="expenses_entry.html" class="nav-link" data-key="t-expenses-entry"> Expenses Entry </a>
+                                        <a href="expenses_entry_view.html" class="nav-link" data-key="t-expenses-entry"> Expenses Entry </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="production_entry_view.html" class="nav-link" data-key="t-production-entry"> Production Entry </a>
@@ -177,12 +175,13 @@
                                     <li class="nav-item">
                                         <a href="operator_payment_view.html" class="nav-link" data-key="t-production-entry"> Operator payment </a>
                                     </li>
+                                    
                                     <li class="nav-item">
                                         <a href="sales_entry_view.html" class="nav-link" data-key="t-sales-entry-local"> Sales Entry </a>
                                     </li>
                                    
                                     <li class="nav-item">
-                                        <a href="customer_entry_view.html" class="nav-link active" data-key="t-customer-entry"> Customer Entry </a>
+                                        <a href="customer_entry_view.html" class="nav-link" data-key="t-customer-entry"> Customer Entry </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="contact_details_view.html" class="nav-link" data-key="t-contact-details"> Contact Details </a>
@@ -192,6 +191,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="scrap_entry_view.html" class="nav-link" data-key="t-scrap-entry"> scrap entry </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="investment_entry_view.html" class="nav-link active" data-key="t-scrap-entry"> Investment entry </a>
                                     </li>
                                     <li class="nav-item" >
                                         <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
@@ -230,12 +232,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Customer Entry</h4>
+                                <h4 class="mb-sm-0">Investment Entry</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Apps</a></li>
-                                        <li class="breadcrumb-item active">Customer Entry</li>
+                                        <li class="breadcrumb-item active">Investment Entry</li>
                                     </ol>
                                 </div>
 
@@ -254,46 +256,54 @@
                                 <div class="card-body">
                                     <div class="live-preview">
                                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-               onload="if(submitted) {window.location='customer_entry.html';}"></iframe>
+               onload="if(submitted) {window.location='investment_entry_view.html';}"></iframe>
             <form method="post"
-               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdZ9C2qPn-p1AWJd7_Nn95FmSyMdDg31nhRTWouY8JQq2de0Q/formResponse"
-               id="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdVos4wFGR5Q8h4JsrV7IfuTR85-4D5qWbY_OlgM4Ou5GEq7A/formResponse"
+               id="contact-form01" target="hidden_iframe" onsubmit="submitted=true;">
                                         <div class="row gy-4">
 
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
+                                                    <label for="date" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" name="entry.1109457892" id="date" required>
+
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-md-6">
+                                                <div>
+                                                    <label for="basiInput" class="form-label">Size</label>
+                                                    <select name="entry.326042546" class="form-select" id="validationTooltip04" required="">
+                                                        <option selected="" disabled="" value="">Choose...</option>
+                                                        <option>Vijay Pawase</option>
+                                                        <option>Pramod More</option>
+                                                        <option>Sandeep Shete</option>
+                                                        <option>Amit Rajgude</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                           
                                             
                                             <div class="col-xxl-4 col-md-6">
                                                 <div>
-                                                    <label for="basiInput" class="form-label">Customer Name</label>
-                                                    <input type="text" class="form-control" id="basiInput" name="entry.1153147981" required>
+                                                    <label for="basiInput" class="form-label">Amount</label>
+
+                                                    <div class="input-group has-validation">
+                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
+                                                        <input name="entry.2040506678" type="number" class="form-control" id="basiInput"  required>
+                                                        
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="basiInput" class="form-label">Address</label>
-                                                    <input type="text" class="form-control" id="basiInput" name="entry.1328974545" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="basiInput" class="form-label">Customer Mobile Number</label>
-                                                    <input type="number" class="form-control" id="basiInput" name="entry.505169210" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="basiInput" class="form-label">Location</label>
-                                                    <input type="text" class="form-control" id="basiInput" name="entry.790203809" required>
-                                                </div>
-                                            </div>
+                                            
 
 
-                                            
-                                            
-                                            
+
                                             
                                             
                                             <div class="col-12">
-                                                <button class="btn btn-primary" type="submit"  name="submit-form">Submit form</button>
+                                                <button class="btn btn-primary" type="submit" name="submit-form">Submit form</button>
                                             </div>
                                             
                                             

@@ -75,7 +75,8 @@
 
                
             </div>
-            <a href="expenses_entry_view.html"><button class="btn btn-primary" type="text" >View data</button></a>
+            <a href="investment_entry.html"><button class="btn btn-primary" type="text" >Add data</button></a>
+
 
           
         </div>
@@ -167,7 +168,7 @@
                                         <a href="employee_registration_view.html" class="nav-link" data-key="t-employee-registration"> Employee Registration </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="expenses_entry_view.html" class="nav-link active" data-key="t-expenses-entry"> Expenses Entry </a>
+                                        <a href="expenses_entry_view.html" class="nav-link" data-key="t-expenses-entry"> Expenses Entry </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="production_entry_view.html" class="nav-link" data-key="t-production-entry"> Production Entry </a>
@@ -175,7 +176,6 @@
                                     <li class="nav-item">
                                         <a href="operator_payment_view.html" class="nav-link" data-key="t-production-entry"> Operator payment </a>
                                     </li>
-                                    
                                     <li class="nav-item">
                                         <a href="sales_entry_view.html" class="nav-link" data-key="t-sales-entry-local"> Sales Entry </a>
                                     </li>
@@ -192,8 +192,8 @@
                                     <li class="nav-item">
                                         <a href="scrap_entry_view.html" class="nav-link" data-key="t-scrap-entry"> scrap entry </a>
                                     </li>
-<li class="nav-item">
-                                        <a href="investment_entry_view.html" class="nav-link" data-key="t-scrap-entry"> Investment entry </a>
+                                    <li class="nav-item">
+                                        <a href="investment_entry_view.html" class="nav-link active" data-key="t-scrap-entry"> Investment entry </a>
                                     </li>
                                     <li class="nav-item" >
                                         <a href="invoice_creation.html" class="nav-link" data-key="t-invoice-creation"> Invoice Creation </a>
@@ -232,12 +232,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Expenses Entry</h4>
+                                <h4 class="mb-sm-0">Investment Entry</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Apps</a></li>
-                                        <li class="breadcrumb-item active">Expenses Entry</li>
+                                        <li class="breadcrumb-item active">Investment Entry</li>
                                     </ol>
                                 </div>
 
@@ -245,6 +245,8 @@
                         </div>
                     </div>
                     <!-- end page title -->
+
+                    
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -255,129 +257,10 @@
                                 </div> --><!-- end card header -->
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-               onload="if(submitted) {window.location='expenses_entry.html';}"></iframe>
-            <form method="post"
-               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWJJLyQxpvfk0aIZ_FbVGIw34bmzYJdkbi-ggbnbb85bPYZA/formResponse"
-               id="contact-form01" target="hidden_iframe" onsubmit="submitted=true;">
-                                        <div class="row gy-4">
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="date" class="form-label">Date</label>
-                                                    <input type="date" class="form-control" name="entry.1785172680" id="date" required>
-
-                                                    
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="basiInput" class="form-label">Expense Category</label>
-                                                    <input type="text" class="form-control" id="basiInput">
-                                                </div>
-                                            </div> -->
-                                            
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="description" class="form-label col-12">Description of Expense</label>
-                                                    <input name="entry.912245389" type="text"  class="form-control" id="description" required>
-                                                    
-
-
-
-                                                   <!--  <datalist name="entry.912245389" class="form-selectx" id="description" required="">
-                                                        <option selected="" disabled="" value="">Choose...</option>
-                                                        <option>Rent</option>
-                                                        <option>Electricity</option>
-                                                        <option>Salary</option>
-                                                        <option>Water Jar</option>
-                                                    </datalist> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6 ">
-                                                <label for="entry.847010365" class="form-label col-md-12 mb-3">Receipt Provided</label>
-                                                <span class="me-4">
-                                                    <input value="Yes" name="entry.847010365" class="form-check-input" type="radio"  id="entry.847010365" required>
-                                                    <label form="Yes" class="form-check-label" >
-                                                        Yes
-                                                    </label>
-                                                </span>
-                                                <span>
-                                                    <input value="No" name="entry.847010365" class="form-check-input" type="radio"  id="entry.847010365" required>
-                                                    <label for="No" class="form-check-label" >
-                                                        No
-                                                    </label>
-                                                </span>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div>
-                                                    <label for="basiInput" class="form-label">Amount</label>
-
-                                                    <div class="input-group has-validation">
-                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">₹</span>
-                                                        <input name="entry.1547063044" type="number" class="form-control" id="basiInput"  required>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-4 col-md-6 ">
-                                                <label for="entry.1908069096" class="form-label col-md-12 mb-3">Payment Mode</label>
-                                                <span class="me-4">
-                                                    <input class="form-check-input" value="Cash" type="radio" name="entry.1908069096" id="entry.1908069096" required>
-                                                    <label class="form-check-label" for="Cash">
-                                                        Cash
-                                                    </label>
-                                                </span>
-                                                <span>
-                                                    <input class="form-check-input" value="Online" type="radio" name="entry.1908069096" id="entry.1908069096" required>
-                                                    <label class="form-check-label" for="Online">
-                                                        Online
-                                                    </label>
-                                                </span>
-                                            </div>
-
-
-
-                                            
-                                            
-                                            <div class="col-12">
-                                                <button class="btn btn-primary" type="submit" name="submit-form">Submit form</button>
-                                            </div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        </div>
-                                        </form>
-                                        <!--end row-->
+                                        
+                                        <iframe src="https://script.google.com/macros/s/AKfycbxFVUYR6k7RaQpsAuZ28gQARBOBPczbhr5Ho0kipdx_7kokJy-DAGys91PmmrsgDrxl/exec" width="100%" height="450" ></iframe>
+                                        
+            
                                     </div>
                                   
                                 </div>
